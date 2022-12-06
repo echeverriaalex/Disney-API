@@ -7,5 +7,5 @@ app.use('/', router);
 
 app.listen(port, ()=>{
 
-    console.log(`Developing Disney API ${port}`);
+    console.log(`Developing Disney API on port ${port}`);
 })
