@@ -1,0 +1,21 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    
+    background-color: rgb(175, 32, 32);
+}
+
+h1{
+
+    font-size: 12px;
+}
+
+div{
+
+    border: solid 2px rgb(8, 145, 61);
+}
