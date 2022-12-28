@@ -21,6 +21,8 @@ router.get('/developer', (req, res, next)=>{
 
 router.get('/characters', characterController.getCharacters);
 
+
+
 /* 
 // no se puede hacer porque getcharacters lanza una respuesta
 router.get('/characters', (req, res, next)=>{
@@ -31,6 +33,26 @@ router.get('/characters', (req, res, next)=>{
 
 });
 */
+
+router.get('/people', async(req, res, next)=>{
+    const data =  [
+                {name: "alex", lastname: "echeverria"},
+                {name: "gustavo", lastname: "echeverria"},
+                {name: "maira", lastname: "echeverria"},
+                {name: "laura", lastname: "lencinas"}
+            ];
+
+    console.log(data);
+    res.render('people.ejs', {people: data});
+
+});
+
+router.get('/charactersrender', async(req, res, next)=>{
+
+    let list = await characterController.getJSONCharacters();
+    console.log(list[0]);
+    res.render('characters.ejs', {characters: list});
+});
 
 router.get('/character/:name', characterController.getCharacterByName);
 router.get('/character/:id', characterController.getCharacterById);
