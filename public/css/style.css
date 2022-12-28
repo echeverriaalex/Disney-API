@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(147, 189, 228);
+}
+
+h1{
+    font-size: 40px;
+    text-align: center; 
+    border: outset 3px cornflowerblue;
+}
+
+h2{
+    text-align: center;
+
+}
+
+div{
+    width: 300px ; margin: auto;
+    border: solid 2px rgb(8, 145, 61);
+    border: 2px solid rgb(2, 0, 0); 
+    margin: auto; 
+    margin-top: 10px; 
+    width: 500px;
+    border-radius: 10px;
+}
+
+img{
+    margin: auto;
+}
