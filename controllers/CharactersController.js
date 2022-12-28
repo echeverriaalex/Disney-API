@@ -30,6 +30,28 @@ const getCharacters = async(req,res, next) =>{
     }
 }
 
+async function getJSONCharacters(){ 
+    
+        let characters = await fetch(DISNEY_CHARACTERS_API);
+        characters = await characters.json();
+        characters = characters.data.map(character => ({
+            //console.log(character.name);
+            name: character.name,
+            _id: character._id,
+            films: character.films,
+            shortFilms: character.shortFilms,
+            tvShows: character.tvShows,
+            videoGames: character.videoGames,
+            parkAttractions: character.parkAttractions,
+            allies: character.allies,
+            enemies: character.enemies,
+            imageUrl: character.imageUrl,
+            url: character.url
+        }));
+
+        return characters;
+}
+
 const getCharacterByName = async(req,res, next) =>{
     let name = req.params.name;
     try{
@@ -102,5 +124,6 @@ module.exports = {
     getCharacters,
     getCharacterByName,
     getCharacterById,
+    getJSONCharacters,
     getBasicInfoCharacters,
 }
