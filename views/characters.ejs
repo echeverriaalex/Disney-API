@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  href="style.css" rel="stylesheet" type="text/css">
-    <% include("./style.css"); %>
+    <link  href="/css/style.css" rel="stylesheet" type="text/css">
     <title>Characters</title>
 </head>
 <body>
     
-    <h1 style="text-align: center; border: outset 3px cornflowerblue;"> Characters' list </h1>
-
+    <h1> Characters' list </h1>
     
     <% characters.forEach(function (character) { %>
         
-        <div style="border: 2px solid red; margin: auto; margin-top: 10px; width: 500px;" >
-            <h2 style="text-align: center;"> <%= character.name %> </h2>
-            <img style="width: 300px ; margin: auto;" src="<%= character.imageUrl %>">
+        <div>
+            <h2 > <%= character.name %> </h2>
+            <img src="<%= character.imageUrl %>">
             <p> <%= character.tvShows %>  </p>
             <p> <%= character.videoGames %>  </p>
         </div>
     <% }); %> 
-    
-     
     
 </body>
 </html>
