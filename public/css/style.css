@@ -13,12 +13,48 @@ h1{
     border: outset 3px cornflowerblue;
 }
 
+.home{
+    font-size: 70px;
+    text-align: center;
+    background-color: rgb(0, 195, 255);
+}
+
+.img{
+   
+    margin: auto;
+    width: 90%;
+    height: 80%;
+}
+
+.presentation{
+     
+    text-align: center;
+    border-radius: 0px;
+    font-size: 25px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.information{
+
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+}
+
 h2{
     text-align: center;
 
 }
 
 div{
+    margin-top: 10px;
     width: 300px ; margin: auto;
     border: solid 2px rgb(8, 145, 61);
     border: 2px solid rgb(2, 0, 0); 
@@ -26,6 +62,7 @@ div{
     margin-top: 10px; 
     width: 500px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 img{
