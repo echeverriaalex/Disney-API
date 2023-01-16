@@ -1,3 +1,4 @@
+const fetch = (url) => import('node-fetch').then(({default: fetch}) => fetch(url));
 const DISNEY_CHARACTERS_API = "https://api.disneyapi.dev/characters";
 
 const getCharacters = async(req,res, next) =>{

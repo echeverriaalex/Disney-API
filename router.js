@@ -47,7 +47,7 @@ router.get('/people', async(req, res, next)=>{
 
 });
 
-router.get('/charactersrender', async(req, res, next)=>{
+router.get('/charactersrender', async(req,res, next)=>{
 
     let list = await characterController.getJSONCharacters();
     console.log(list[0]);
